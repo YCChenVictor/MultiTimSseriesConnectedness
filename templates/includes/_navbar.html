@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-md navbar-default bg-black">
+    <a class="navbar-brand" href="#">Financial_Connectedness</a>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"><a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="/upload">Upload</a></li>
+            <li class="nav-item"><a class="nav-link" href="/train">Train</a></li>
+            <li class="nav-item"><a class="nav-link" href="/plot">Plot</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+            {% if session.logged_in %}
+                <li><a href="/dashboard"><button class="btn">Dashboard</button></a></li>
+                <li><a href="/logout"><button class="btn">Logout</button></a></li>
+            {% else %}
+                <li><a href="/register"><button class="btn">Register</button></a></li>
+                <li><a href="/login"><button class="btn">Login</button></a></li>
+            {% endif %}
+        </ul>
+    </div>
+</nav>
