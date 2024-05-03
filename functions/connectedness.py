@@ -14,13 +14,13 @@ b means volatility of 2 cause volatility of 1
 import numpy as np
 import pandas as pd
 import os
-import functions.f_about_path as fap
+import functions.about_path as f_ap
 import json
 
 
 # load Prerequisite
 file_dir = os.path.dirname(os.path.abspath(__file__))
-parent_path = fap.f_parent_path(file_dir, 1)
+parent_path = f_ap.f_parent_path(file_dir, 1)
 with open(parent_path + '/docs' + '/Prerequisite.json') as f:
     prerequisite = json.load(f)
 # print(prerequisite)
@@ -29,7 +29,7 @@ target_folder = prerequisite['target_folder']
 
 # simple version for working with CWD
 file_path = os.path.dirname(os.path.realpath(__file__))
-parent_path = fap.f_parent_path(file_path, 1)
+parent_path = f_ap.f_parent_path(file_path, 1)
 save_path = parent_path + '/docs/' + target_folder
 n_instruments = sum([len(files) for r, d, files in os.walk(save_path)])
 # print(n_instruments)
