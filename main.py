@@ -10,20 +10,16 @@ import functions.f_about_path as fap
 # count the time span, start
 start_time = time.time()
 
-# load Prerequisite
+# load variables
 file_dir = os.path.dirname(os.path.abspath(__file__))
-with open(file_dir + '/docs' + '/Prerequisite.json') as f:
-    prerequisite = json.load(f)
-# print(prerequisite)
-
-
-# varibales from prerequisite
-target_folder = prerequisite["target_folder"]
-predict_conns_periods = prerequisite["predict_conns_periods"]
-maximum_lag = prerequisite["maximum_lag"]
-periods_one_conn = prerequisite["periods_one_conn"]
-start_dt = prerequisite['start_dt']
-end_dt = prerequisite['end_dt']
+with open(file_dir + '/variables.json') as f:
+    variables = json.load(f)
+target_folder = variables["target_folder"]
+predict_conns_periods = variables["predict_conns_periods"]
+maximum_lag = variables["maximum_lag"]
+periods_one_conn = variables["periods_one_conn"]
+start_date = variables['start_date']
+end_date = variables['end_date']
 
 
 # the number of data

@@ -18,13 +18,12 @@ import functions.about_path as f_ap
 import json
 
 
-# load Prerequisite
+# load variables
 file_dir = os.path.dirname(os.path.abspath(__file__))
 parent_path = f_ap.f_parent_path(file_dir, 1)
-with open(parent_path + '/docs' + '/Prerequisite.json') as f:
-    prerequisite = json.load(f)
-# print(prerequisite)
-target_folder = prerequisite['target_folder']
+with open(parent_path + '/variables.json') as f:
+    variables = json.load(f)
+target_folder = variables['target_folder']
 
 
 # simple version for working with CWD

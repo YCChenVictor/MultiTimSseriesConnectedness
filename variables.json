@@ -1,0 +1,16 @@
+{
+  "comment": {
+    "target_folder": "The location of data for calculating connectedness",
+    "predict_conns_periods": "How forward predicted periods of connectedness",
+    "maximum_lag": "The maximum lag to make VAR calculation",
+    "periods_for_one_conn": "The number of periods to calculate one connectedness",
+    "start_date": "the start date of the predicted connectedness",
+    "end_date": "the end date of the predicted connectedness",
+  },
+  "target_folder": "market_price",
+  "predict_conns_periods": 1,
+  "maximum_lag": 14,
+  "periods_for_one_conn": 365,
+  "start_date": "2010-11-19",
+  "end_date": "2020-06-18"
+}
