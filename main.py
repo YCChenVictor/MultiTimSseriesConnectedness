@@ -1,6 +1,6 @@
 import os
 import pickle
-import functions.f_rolling_connectedness as f_roll
+import functions.rolling_connectedness as f_roll
 import time
 import json
 import functions.f_about_path as fap
