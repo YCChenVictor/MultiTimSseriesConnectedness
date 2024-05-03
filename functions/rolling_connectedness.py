@@ -1,5 +1,5 @@
 # import the required module
-import functions.f_connectedness as f_conn
+import functions.connectedness as f_conn
 import functions.f_coef as f_coef
 from functions.f_date import add_date, date_format, daterange, minus_date
 import pandas as pd
