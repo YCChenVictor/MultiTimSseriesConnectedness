@@ -36,16 +36,12 @@ n_instruments = sum([len(files) for r, d, files in os.walk(save_path)])
 if os.path.isfile(save_path + '/.DS_Store'):
     os.remove(save_path + '/.DS_Store')
 
-
 # load volatility_dataframe
-file_path = os.path.dirname(os.path.realpath(__file__))
-save_path = file_path + '/docs/' + 'volatility.pickle'
+parent_path = os.path.dirname(os.path.realpath(__file__))
+save_path = parent_path + 'volatility.csv'
+volatility_dataframe.to_csv('volatility.csv', index=False)
 with open(save_path, 'rb') as f:
     volatility_dataframe = pickle.load(f)
-# print(len(list(volatility_dataframe)))
-# with pd.option_context('display.max_rows', None, 'display.max_columns', None):
-#     print(volatility_dataframe)
-
 
 # start the rolling connectedness
 roll_conn = (f_roll.
