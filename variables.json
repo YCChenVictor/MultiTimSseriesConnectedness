@@ -5,8 +5,9 @@
     "maximum_lag": "The maximum lag to make VAR calculation",
     "periods_for_one_conn": "The number of periods to calculate one connectedness",
     "start_date": "the start date of the predicted connectedness",
-    "end_date": "the end date of the predicted connectedness",
+    "end_date": "the end date of the predicted connectedness"
   },
+  "periods_one_conn": 365,
   "target_folder": "market_price",
   "predict_conns_periods": 1,
   "maximum_lag": 14,
