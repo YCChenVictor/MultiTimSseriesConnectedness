@@ -3,7 +3,7 @@ import pickle
 import functions.rolling_connectedness as f_roll
 import time
 import json
-import functions.f_about_path as fap
+import functions.about_path as fap
 # import pandas as pd
 
 
