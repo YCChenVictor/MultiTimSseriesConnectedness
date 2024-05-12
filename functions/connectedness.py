@@ -21,8 +21,11 @@ import json
 # load variables
 file_dir = os.path.dirname(os.path.abspath(__file__))
 parent_path = f_ap.f_parent_path(file_dir, 1)
-with open(parent_path + '/variables.json') as f:
-    variables = json.load(f)
+try:
+    with open(parent_path + '/variables.json') as file:
+        variables = json.load(file)
+except Exception as e:
+    print(f"An error occurred: {e}")
 target_folder = variables['target_folder']
 
 
