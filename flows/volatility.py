@@ -4,13 +4,14 @@ import os
 import pickle
 import time
 import json
+from modules.path import parent_path_once
 
 # count the time span, start
 start_time = time.time()
 
 # load Prerequisite
 file_dir = os.path.dirname(os.path.abspath(__file__))
-with open(file_dir + '/docs' + '/Prerequisite.json') as f:
+with open(parent_path_once(file_dir) + '/variables.json') as f:
     prerequisite = json.load(f)
 # print(prerequisite)
 
