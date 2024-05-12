@@ -4,7 +4,7 @@ import datetime
 import pandas as pd
 import os
 import pickle
-from functions.f_about_path import f_parent_path
+from modules.path import f_parent_path
 
 def yang_zhang_volatility(data, n=2, clean=False):
     """

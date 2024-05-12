@@ -14,7 +14,7 @@ b means volatility of 2 cause volatility of 1
 import numpy as np
 import pandas as pd
 import os
-import functions.about_path as f_ap
+import modules.path as f_ap
 import json
 
 
