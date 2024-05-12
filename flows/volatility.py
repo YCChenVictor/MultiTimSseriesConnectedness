@@ -1,5 +1,5 @@
 # import modules
-import functions.f_volatility as f_vol
+import modules.volatility as mv
 import os
 import pickle
 import time
@@ -18,7 +18,7 @@ with open(file_dir + '/docs' + '/Prerequisite.json') as f:
 end_dt = prerequisite['end_dt']
 
 # calculate volatility dataframe
-volatility = f_vol.volatility(end_dt)
+volatility = mv.volatility(end_dt)
 volatility.price_data_to_volatility()
 volatility.dataframe_volatility()
 volatility_dataframe = volatility.dataframe

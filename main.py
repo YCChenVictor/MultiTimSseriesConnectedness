@@ -31,6 +31,8 @@ save_path = parent_path + '/docs/' + target_folder
 n_instruments = sum([len(files) for r, d, files in os.walk(save_path)])
 # print(n_instruments)
 
+# calculate volatility
+import flows.volatility
 
 # delete .DS_store
 if os.path.isfile(save_path + '/.DS_Store'):
