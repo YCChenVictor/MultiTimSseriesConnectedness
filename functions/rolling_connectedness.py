@@ -1,11 +1,10 @@
 # import the required module
 import functions.connectedness as f_conn
-import functions.f_coef as f_coef
-from functions.f_date import add_date, date_format, daterange, minus_date
+# import functions.f_coef as f_coef
+# from functions.f_date import add_date, date_format, daterange, minus_date
 import pandas as pd
 import numpy as np
 import pickle
-
 
 # functions to make batches of rolling connectedness
 def roll_conn_elements(df, periods):
